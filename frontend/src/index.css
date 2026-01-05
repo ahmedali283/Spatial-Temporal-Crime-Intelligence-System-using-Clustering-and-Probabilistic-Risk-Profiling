@@ -630,22 +630,11 @@ h6 {
 }
 
 /* FAQ Page */
-.faq-page {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 3rem 2rem;
-}
-
-.faq-page h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  color: var(--primary-color);
-}
-
 .faq-grid {
   display: grid;
   gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .faq-card {
