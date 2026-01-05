@@ -1,0 +1,161 @@
+cluster_id,incidents,dominant_town,dominant_town_share,top3_towns,dominant_subdivision,dominant_subdivision_share,top3_subdivisions,centroid_lat,centroid_lon
+69,3356,Gulberg Town,1.0,"[('Gulberg Town', 1.0)]",Federal B Area Block 17,0.08343265792610251,"[('Federal B Area Block 17', 0.08343265792610251), ('Federal B Area Block 5', 0.08164481525625746), ('Federal B Area Block 14', 0.0768772348033373)]",24.937149,67.08761300000002
+151,2962,Shah Faisal Town,1.0,"[('Shah Faisal Town', 1.0)]",Shah Faisal Colony No 5,0.28696826468602293,"[('Shah Faisal Colony No 5', 0.28696826468602293), ('Shah Faisal Colony 1', 0.19547602970965564), ('Shah Faisal Colony 4', 0.19209993247805537)]",24.881096000000007,67.14521400000001
+90,2413,Orangi Town,1.0,"[('Orangi Town', 1.0)]",Sector 16,0.22295897223373395,"[('Sector 16', 0.22295897223373395), ('Sector 13', 0.20721094073767096), ('Sector 11', 0.20430998756734356)]",24.946105999999997,67.012881
+0,2143,Lyari Town,1.0,"[('Lyari Town', 1.0)]",Baghdadi,1.0,"[('Baghdadi', 1.0)]",24.859199999999998,66.99980000000001
+11,2077,Lyari Town,1.0,"[('Lyari Town', 1.0)]",Kalakot,1.0,"[('Kalakot', 1.0)]",24.869417,67.00364800000001
+139,1889,Landhi Town,1.0,"[('Landhi Town', 1.0)]",Landhi No. 1,0.2853361566966649,"[('Landhi No. 1', 0.2853361566966649), ('Landhi No. 5', 0.2482795129698253), ('Landhi No. 4', 0.24351508734780308)]",24.852093000000007,67.186472
+134,1745,Korangi Town,1.0,"[('Korangi Town', 1.0)]",Zaman Town,1.0,"[('Zaman Town', 1.0)]",24.836298,67.15270999999997
+156,1468,Gadap Town,1.0,"[('Gadap Town', 1.0)]",Manghopir,0.6641689373297003,"[('Manghopir', 0.6641689373297003), ('Gulshan-e-Maymar', 0.3358310626702997)]",25.025278,67.12409400000001
+2,1392,Lyari Town,1.0,"[('Lyari Town', 1.0)]",Shah Baig Line,1.0,"[('Shah Baig Line', 1.0)]",24.864664,66.99147100000002
+130,1383,Korangi Town,1.0,"[('Korangi Town', 1.0)]",Nasir Colony,1.0,"[('Nasir Colony', 1.0)]",24.821126999999997,67.128066
+3,1347,Lyari Town,1.0,"[('Lyari Town', 1.0)]",Nayabad,1.0,"[('Nayabad', 1.0)]",24.857920000000007,66.98747100000003
+142,1311,Landhi Town,1.0,"[('Landhi Town', 1.0)]",Landhi 89,1.0,"[('Landhi 89', 1.0)]",24.846765,67.205914
+13,1303,Lyari Town,1.0,"[('Lyari Town', 1.0)]",Singo Lane,1.0,"[('Singo Lane', 1.0)]",24.875794,66.99985
+107,1282,Orangi Town,1.0,"[('Orangi Town', 1.0)]",Pirabad,1.0,"[('Pirabad', 1.0)]",24.932899999999997,66.96960000000001
+5,1247,Saddar Town,1.0,"[('Saddar Town', 1.0)]",Regal Chowk,1.0,"[('Regal Chowk', 1.0)]",24.856500000000004,67.00890000000001
+6,1223,Saddar Town,1.0,"[('Saddar Town', 1.0)]",Burns Road,1.0,"[('Burns Road', 1.0)]",24.860800000000005,67.01440000000001
+109,1199,Orangi Town,1.0,"[('Orangi Town', 1.0)]",Ghaziabad,1.0,"[('Ghaziabad', 1.0)]",24.943199999999997,66.97779999999999
+144,1177,Landhi Town,1.0,"[('Landhi Town', 1.0)]",Sherpao Colony,1.0,"[('Sherpao Colony', 1.0)]",24.835662000000003,67.209429
+9,1144,Keamari Town,1.0,"[('Keamari Town', 1.0)]",Machhar Colony,1.0,"[('Machhar Colony', 1.0)]",24.862699999999997,66.97979999999998
+104,1116,Baldia Town,1.0,"[('Baldia Town', 1.0)]",Saeedabad,1.0,"[('Saeedabad', 1.0)]",24.911514000000004,66.968816
+117,1111,Jamshed Town,1.0,"[('Jamshed Town', 1.0)]",Baloch Colony,1.0,"[('Baloch Colony', 1.0)]",24.843344999999996,67.08396100000002
+112,1092,Jamshed Town,1.0,"[('Jamshed Town', 1.0)]",Nursery,1.0,"[('Nursery', 1.0)]",24.860583999999996,67.061134
+125,1045,New Karachi Town,1.0,"[('New Karachi Town', 1.0)]",Godhra Camp,0.5186602870813397,"[('Godhra Camp', 0.5186602870813397), ('Khamiso Goth', 0.4813397129186603)]",24.999886,67.06482700000001
+148,1026,Landhi Town,1.0,"[('Landhi Town', 1.0)]",Moeenabad,1.0,"[('Moeenabad', 1.0)]",24.8923,67.1857
+137,1025,Korangi Town,1.0,"[('Korangi Town', 1.0)]",Bilal Colony,1.0,"[('Bilal Colony', 1.0)]",24.847847999999995,67.13428099999999
+89,978,SITE Town,1.0,"[('SITE Town', 1.0)]",Qasba Colony,1.0,"[('Qasba Colony', 1.0)]",24.942142999999994,67.02371200000002
+155,958,Gadap Town,1.0,"[('Gadap Town', 1.0)]",Ahsanabad,1.0,"[('Ahsanabad', 1.0)]",25.007699,67.11660500000002
+113,955,Jamshed Town,1.0,"[('Jamshed Town', 1.0)]",Tariq Road,1.0,"[('Tariq Road', 1.0)]",24.865539000000005,67.05607399999997
+101,951,Baldia Town,1.0,"[('Baldia Town', 1.0)]",Abidabad,1.0,"[('Abidabad', 1.0)]",24.923800000000004,66.98429999999999
+133,919,Korangi Town,1.0,"[('Korangi Town', 1.0)]",Korangi No. 5,0.5168661588683352,"[('Korangi No. 5', 0.5168661588683352), ('Korangi No. 2', 0.48313384113166485)]",24.833854,67.14431800000001
+103,917,Baldia Town,1.0,"[('Baldia Town', 1.0)]",Nai Abadi,1.0,"[('Nai Abadi', 1.0)]",24.917013,66.96268499999998
+116,915,Keamari Town,1.0,"[('Keamari Town', 1.0)]",Hindu Para,1.0,"[('Hindu Para', 1.0)]",24.800000000000008,66.99000000000001
+129,912,Korangi Town,1.0,"[('Korangi Town', 1.0)]",Mehran Town,1.0,"[('Mehran Town', 1.0)]",24.809500000000007,67.12009999999998
+4,898,Keamari Town,1.0,"[('Keamari Town', 1.0)]",Jackson Market,1.0,"[('Jackson Market', 1.0)]",24.852799999999995,66.9937
+140,897,Landhi Town,1.0,"[('Landhi Town', 1.0)]",Future Colony,1.0,"[('Future Colony', 1.0)]",24.856858999999993,67.196238
+131,886,Korangi Town,1.0,"[('Korangi Town', 1.0)]",Korangi No. 3,0.5191873589164786,"[('Korangi No. 3', 0.5191873589164786), ('Korangi No. 6', 0.48081264108352145)]",24.826819,67.129813
+97,882,SITE Town,1.0,"[('SITE Town', 1.0)]",Metroville,1.0,"[('Metroville', 1.0)]",24.923251,66.99777400000002
+157,881,Gadap Town,1.0,"[('Gadap Town', 1.0)]",Taiser Town,1.0,"[('Taiser Town', 1.0)]",25.042754,67.10274000000003
+110,860,Keamari Town,1.0,"[('Keamari Town', 1.0)]",Mansan Chowk,1.0,"[('Mansan Chowk', 1.0)]",24.8451,66.97299999999998
+106,854,Baldia Town,1.0,"[('Baldia Town', 1.0)]",Rasheedabad,1.0,"[('Rasheedabad', 1.0)]",24.904616999999995,66.97184200000001
+108,833,Baldia Town,1.0,"[('Baldia Town', 1.0)]",Ittehad Town,1.0,"[('Ittehad Town', 1.0)]",24.939389000000006,66.96117300000003
+138,817,Bin Qasim Town,1.0,"[('Bin Qasim Town', 1.0)]",Ibrahim Hyderi,1.0,"[('Ibrahim Hyderi', 1.0)]",24.797538,67.135893
+96,811,SITE Town,1.0,"[('SITE Town', 1.0)]",Frontier Colony,1.0,"[('Frontier Colony', 1.0)]",24.92918600000001,67.00551799999998
+10,801,Lyari Town,1.0,"[('Lyari Town', 1.0)]",Chakiwara,1.0,"[('Chakiwara', 1.0)]",24.871439000000002,66.99959000000001
+14,750,Lyari Town,1.0,"[('Lyari Town', 1.0)]",Bihar Colony,1.0,"[('Bihar Colony', 1.0)]",24.873192,66.98717099999999
+51,749,Gulshan-e-Iqbal Town,1.0,"[('Gulshan-e-Iqbal Town', 1.0)]",Gulshan-e-Iqbal Block 13D,1.0,"[('Gulshan-e-Iqbal Block 13D', 1.0)]",24.910891999999993,67.085156
+34,745,SITE Town,1.0,"[('SITE Town', 1.0)]",Haroonabad,1.0,"[('Haroonabad', 1.0)]",24.888763000000004,66.989011
+91,707,Orangi Town,1.0,"[('Orangi Town', 1.0)]",Sector 12,0.6647807637906648,"[('Sector 12', 0.6647807637906648), ('Sector 12-L', 0.3352192362093352)]",24.946952000000003,67.01173800000001
+16,701,Saddar Town,1.0,"[('Saddar Town', 1.0)]",Empress Market,1.0,"[('Empress Market', 1.0)]",24.862097999999996,67.029487
+55,694,Gulshan-e-Iqbal Town,1.0,"[('Gulshan-e-Iqbal Town', 1.0)]",Gulshan-e-Iqbal Block 13F,1.0,"[('Gulshan-e-Iqbal Block 13F', 1.0)]",24.9145,67.10019999999999
+159,677,Bin Qasim Town,1.0,"[('Bin Qasim Town', 1.0)]",Gulshan-e-Hadeed,1.0,"[('Gulshan-e-Hadeed', 1.0)]",24.873059000000005,67.36615700000002
+60,674,Gulshan-e-Iqbal Town,1.0,"[('Gulshan-e-Iqbal Town', 1.0)]",Shanti Nagar,1.0,"[('Shanti Nagar', 1.0)]",24.9265,67.09910000000002
+1,669,Lyari Town,1.0,"[('Lyari Town', 1.0)]",Daryabad,1.0,"[('Daryabad', 1.0)]",24.862247999999994,66.99119799999998
+7,667,Saddar Town,1.0,"[('Saddar Town', 1.0)]",I.I Chundrigar,1.0,"[('I.I Chundrigar', 1.0)]",24.850078999999994,67.010445
+33,659,SITE Town,1.0,"[('SITE Town', 1.0)]",Pak Colony,1.0,"[('Pak Colony', 1.0)]",24.900692,67.01788799999997
+54,628,Gulshan-e-Iqbal Town,1.0,"[('Gulshan-e-Iqbal Town', 1.0)]",Gulshan-e-Iqbal Block 13E,1.0,"[('Gulshan-e-Iqbal Block 13E', 1.0)]",24.914199999999997,67.09879999999998
+121,585,Orangi Town,1.0,"[('Orangi Town', 1.0)]",Sector 4,1.0,"[('Sector 4', 1.0)]",24.99574000000001,67.03577900000002
+94,574,Orangi Town,1.0,"[('Orangi Town', 1.0)]",Sector 5,1.0,"[('Sector 5', 1.0)]",24.939624000000006,67.002435
+136,571,Landhi Town,1.0,"[('Landhi Town', 1.0)]",Landhi No. 6,1.0,"[('Landhi No. 6', 1.0)]",24.83266499999999,67.174286
+127,565,New Karachi Town,1.0,"[('New Karachi Town', 1.0)]",Sector 5-D,1.0,"[('Sector 5-D', 1.0)]",25.007285999999997,67.07689900000001
+150,560,Shah Faisal Town,1.0,"[('Shah Faisal Town', 1.0)]",Green Town,1.0,"[('Green Town', 1.0)]",24.884421,67.160163
+36,560,Liaquatabad Town,1.0,"[('Liaquatabad Town', 1.0)]",Al-Karam Square,1.0,"[('Al-Karam Square', 1.0)]",24.911987000000007,67.049571
+18,553,Jamshed Town,1.0,"[('Jamshed Town', 1.0)]",Guru Mandir,1.0,"[('Guru Mandir', 1.0)]",24.88136,67.03800800000002
+123,551,New Karachi Town,1.0,"[('New Karachi Town', 1.0)]",Sector 5-E,1.0,"[('Sector 5-E', 1.0)]",24.987957999999995,67.06512399999998
+141,548,Landhi Town,1.0,"[('Landhi Town', 1.0)]",Dawood Chowrangi,1.0,"[('Dawood Chowrangi', 1.0)]",24.850002,67.207305
+93,548,Orangi Town,1.0,"[('Orangi Town', 1.0)]",Sector 6,1.0,"[('Sector 6', 1.0)]",24.938668000000007,67.006294
+153,542,Malir Town,1.0,"[('Malir Town', 1.0)]",Model Colony,1.0,"[('Model Colony', 1.0)]",24.906833000000002,67.189418
+105,538,Baldia Town,1.0,"[('Baldia Town', 1.0)]",Muhajir Camp,1.0,"[('Muhajir Camp', 1.0)]",24.907509,66.96389
+67,526,Gulberg Town,1.0,"[('Gulberg Town', 1.0)]",Federal B Area Block 8,0.5247148288973384,"[('Federal B Area Block 8', 0.5247148288973384), ('Federal B Area Block 9', 0.4752851711026616)]",24.925649000000003,67.06895699999998
+132,522,Korangi Town,1.0,"[('Korangi Town', 1.0)]",Korangi No. 1,1.0,"[('Korangi No. 1', 1.0)]",24.823918999999993,67.13627499999998
+154,519,Malir Town,1.0,"[('Malir Town', 1.0)]",Saudabad,1.0,"[('Saudabad', 1.0)]",24.901004,67.20332499999999
+31,517,Keamari Town,1.0,"[('Keamari Town', 1.0)]",Keamari No. 1,1.0,"[('Keamari No. 1', 1.0)]",24.8183,66.97500000000002
+122,514,New Karachi Town,1.0,"[('New Karachi Town', 1.0)]",Sector 5-C,1.0,"[('Sector 5-C', 1.0)]",24.987478000000007,67.05634299999998
+158,512,Gadap Town,1.0,"[('Gadap Town', 1.0)]",Surjani Town,1.0,"[('Surjani Town', 1.0)]",25.077029999999997,67.073576
+41,510,Liaquatabad Town,1.0,"[('Liaquatabad Town', 1.0)]",Bandhani Colony,1.0,"[('Bandhani Colony', 1.0)]",24.9069,67.05909999999997
+98,504,Orangi Town,1.0,"[('Orangi Town', 1.0)]",Sector 14,1.0,"[('Sector 14', 1.0)]",24.952386999999995,67.001492
+119,502,Orangi Town,1.0,"[('Orangi Town', 1.0)]",Sector 2,1.0,"[('Sector 2', 1.0)]",24.983999999999998,67.03148799999997
+40,496,Liaquatabad Town,1.0,"[('Liaquatabad Town', 1.0)]",Gharibabad,1.0,"[('Gharibabad', 1.0)]",24.908866999999994,67.057283
+135,493,Korangi Town,1.0,"[('Korangi Town', 1.0)]",Korangi No. 4,1.0,"[('Korangi No. 4', 1.0)]",24.826817000000002,67.159403
+71,480,Gulberg Town,1.0,"[('Gulberg Town', 1.0)]",Ancholi,1.0,"[('Ancholi', 1.0)]",24.945701999999997,67.07671000000002
+88,480,Orangi Town,1.0,"[('Orangi Town', 1.0)]",Madina Colony,1.0,"[('Madina Colony', 1.0)]",24.940778000000005,67.02194499999999
+102,477,Baldia Town,1.0,"[('Baldia Town', 1.0)]",Afridi Colony,1.0,"[('Afridi Colony', 1.0)]",24.921273999999997,66.97580900000003
+145,477,Landhi Town,1.0,"[('Landhi Town', 1.0)]",Landhi No. 2,1.0,"[('Landhi No. 2', 1.0)]",24.834609,67.236767
+149,469,Malir Town,1.0,"[('Malir Town', 1.0)]",Jafar Tayyar Society,1.0,"[('Jafar Tayyar Society', 1.0)]",24.887151000000003,67.19552899999998
+128,469,Korangi Town,1.0,"[('Korangi Town', 1.0)]",Allah Wala Town,1.0,"[('Allah Wala Town', 1.0)]",24.820451999999992,67.10613
+100,465,Orangi Town,1.0,"[('Orangi Town', 1.0)]",Islam Chowk,1.0,"[('Islam Chowk', 1.0)]",24.955202999999997,66.990144
+118,464,Orangi Town,1.0,"[('Orangi Town', 1.0)]",Sector 1,1.0,"[('Sector 1', 1.0)]",24.980982999999995,67.03011300000001
+70,463,Gulberg Town,1.0,"[('Gulberg Town', 1.0)]",Water Pump,1.0,"[('Water Pump', 1.0)]",24.936898999999997,67.07598199999998
+126,459,New Karachi Town,1.0,"[('New Karachi Town', 1.0)]",Sector 5-A,1.0,"[('Sector 5-A', 1.0)]",25.004833000000005,67.06176300000003
+30,455,Keamari Town,1.0,"[('Keamari Town', 1.0)]",Bhutta Village,1.0,"[('Bhutta Village', 1.0)]",24.822499999999998,66.9914
+147,452,Malir Town,1.0,"[('Malir Town', 1.0)]",Malir Halt,1.0,"[('Malir Halt', 1.0)]",24.884528999999993,67.17451300000002
+95,452,Orangi Town,1.0,"[('Orangi Town', 1.0)]",Aligarh Colony,1.0,"[('Aligarh Colony', 1.0)]",24.935650000000006,67.012064
+17,451,Jamshed Town,1.0,"[('Jamshed Town', 1.0)]",Soldier Bazaar,1.0,"[('Soldier Bazaar', 1.0)]",24.875529,67.03131199999999
+92,449,Orangi Town,1.0,"[('Orangi Town', 1.0)]",Sector 7,1.0,"[('Sector 7', 1.0)]",24.946028000000005,67.01123699999997
+152,442,Shah Faisal Town,1.0,"[('Shah Faisal Town', 1.0)]",Natha Khan Goth,1.0,"[('Natha Khan Goth', 1.0)]",24.884811000000006,67.13614200000004
+120,442,Orangi Town,1.0,"[('Orangi Town', 1.0)]",Sector 3,1.0,"[('Sector 3', 1.0)]",24.98667,67.036201
+124,441,New Karachi Town,1.0,"[('New Karachi Town', 1.0)]",Sector 5-B,1.0,"[('Sector 5-B', 1.0)]",24.996258000000008,67.05961200000002
+115,438,Jamshed Town,1.0,"[('Jamshed Town', 1.0)]",PECHS,1.0,"[('PECHS', 1.0)]",24.868479999999998,67.058724
+99,435,Orangi Town,1.0,"[('Orangi Town', 1.0)]",Sector 15,1.0,"[('Sector 15', 1.0)]",24.954535,66.99605900000002
+39,381,Gulberg Town,1.0,"[('Gulberg Town', 1.0)]",Federal B Area Block 22,0.5669291338582677,"[('Federal B Area Block 22', 0.5669291338582677), ('Federal B Area Block 20', 0.4330708661417323)]",24.914425999999995,67.06089499999999
+15,351,Lyari Town,1.0,"[('Lyari Town', 1.0)]",Dubai Chowk,1.0,"[('Dubai Chowk', 1.0)]",24.878403,67.01034500000002
+8,326,Saddar Town,1.0,"[('Saddar Town', 1.0)]",Saddar,1.0,"[('Saddar', 1.0)]",24.852856,67.01767300000002
+12,316,Lyari Town,1.0,"[('Lyari Town', 1.0)]",Rangiwara,1.0,"[('Rangiwara', 1.0)]",24.874122,66.995232
+27,282,Saddar Town,1.0,"[('Saddar Town', 1.0)]",Clifton Block 2,1.0,"[('Clifton Block 2', 1.0)]",24.816431999999995,67.006953
+43,280,Gulshan-e-Iqbal Town,1.0,"[('Gulshan-e-Iqbal Town', 1.0)]",Gulshan-e-Iqbal Block 14,1.0,"[('Gulshan-e-Iqbal Block 14', 1.0)]",24.896578,67.07219399999998
+37,275,Liaquatabad Town,1.0,"[('Liaquatabad Town', 1.0)]",Sharifabad,1.0,"[('Sharifabad', 1.0)]",24.914023000000004,67.05356099999999
+42,271,Liaquatabad Town,1.0,"[('Liaquatabad Town', 1.0)]",Qasimabad,1.0,"[('Qasimabad', 1.0)]",24.901005,67.05853899999998
+46,270,Gulshan-e-Iqbal Town,1.0,"[('Gulshan-e-Iqbal Town', 1.0)]",Gulshan-e-Iqbal Block 16,1.0,"[('Gulshan-e-Iqbal Block 16', 1.0)]",24.904063000000004,67.082236
+111,269,Jamshed Town,1.0,"[('Jamshed Town', 1.0)]",SMCHS,1.0,"[('SMCHS', 1.0)]",24.859817000000003,67.055024
+87,264,North Nazimabad Town,1.0,"[('North Nazimabad Town', 1.0)]",Block E,1.0,"[('Block E', 1.0)]",24.914945999999997,67.03189899999998
+73,252,North Nazimabad Town,1.0,"[('North Nazimabad Town', 1.0)]",Block J,1.0,"[('Block J', 1.0)]",24.954919,67.05139599999998
+63,252,Gulshan-e-Iqbal Town,1.0,"[('Gulshan-e-Iqbal Town', 1.0)]",Gulshan-e-Iqbal Block 2,1.0,"[('Gulshan-e-Iqbal Block 2', 1.0)]",24.925151,67.08804299999997
+45,249,Gulshan-e-Iqbal Town,1.0,"[('Gulshan-e-Iqbal Town', 1.0)]",Gulshan-e-Iqbal Block 17,1.0,"[('Gulshan-e-Iqbal Block 17', 1.0)]",24.900051,67.082424
+29,249,Saddar Town,1.0,"[('Saddar Town', 1.0)]",Clifton Block 1,1.0,"[('Clifton Block 1', 1.0)]",24.818749000000004,66.99483799999999
+80,247,North Nazimabad Town,1.0,"[('North Nazimabad Town', 1.0)]",Hyderi,1.0,"[('Hyderi', 1.0)]",24.93622,67.04398600000002
+28,244,Saddar Town,1.0,"[('Saddar Town', 1.0)]",Clifton Block 6,1.0,"[('Clifton Block 6', 1.0)]",24.818016000000004,67.00705300000001
+76,244,North Nazimabad Town,1.0,"[('North Nazimabad Town', 1.0)]",Block I,1.0,"[('Block I', 1.0)]",24.948072000000007,67.044976
+21,240,Saddar Town,1.0,"[('Saddar Town', 1.0)]",Clifton Block 8,1.0,"[('Clifton Block 8', 1.0)]",24.831853000000006,67.03689399999999
+52,239,Gulshan-e-Iqbal Town,1.0,"[('Gulshan-e-Iqbal Town', 1.0)]",Gulshan-e-Iqbal Block 13,1.0,"[('Gulshan-e-Iqbal Block 13', 1.0)]",24.909539999999996,67.080384
+26,237,Saddar Town,1.0,"[('Saddar Town', 1.0)]",Clifton Block 3,1.0,"[('Clifton Block 3', 1.0)]",24.809783,67.02470400000001
+23,236,Saddar Town,1.0,"[('Saddar Town', 1.0)]",Clifton Block 5,1.0,"[('Clifton Block 5', 1.0)]",24.820582,67.028234
+64,235,Gulshan-e-Iqbal Town,1.0,"[('Gulshan-e-Iqbal Town', 1.0)]",Gulshan-e-Iqbal Block 4,1.0,"[('Gulshan-e-Iqbal Block 4', 1.0)]",24.933468,67.099243
+114,235,Jamshed Town,1.0,"[('Jamshed Town', 1.0)]",PECHS Block 2,1.0,"[('PECHS Block 2', 1.0)]",24.868041000000005,67.05945299999998
+20,233,Saddar Town,1.0,"[('Saddar Town', 1.0)]",Cantt Station,1.0,"[('Cantt Station', 1.0)]",24.843791000000007,67.04114400000002
+48,232,Gulshan-e-Iqbal Town,1.0,"[('Gulshan-e-Iqbal Town', 1.0)]",Gulshan-e-Iqbal Block 18,1.0,"[('Gulshan-e-Iqbal Block 18', 1.0)]",24.903349999999993,67.08873100000002
+57,231,Gulshan-e-Iqbal Town,1.0,"[('Gulshan-e-Iqbal Town', 1.0)]",Gulshan-e-Iqbal Block 12,1.0,"[('Gulshan-e-Iqbal Block 12', 1.0)]",24.916299999999996,67.09221400000001
+19,231,Saddar Town,1.0,"[('Saddar Town', 1.0)]",Civil Lines,1.0,"[('Civil Lines', 1.0)]",24.84209700000001,67.031802
+86,229,North Nazimabad Town,1.0,"[('North Nazimabad Town', 1.0)]",Block C,1.0,"[('Block C', 1.0)]",24.915632000000006,67.03346699999999
+143,228,Landhi Town,1.0,"[('Landhi Town', 1.0)]",Bhutto Nagar,1.0,"[('Bhutto Nagar', 1.0)]",24.8476,67.20360000000001
+146,228,Malir Town,1.0,"[('Malir Town', 1.0)]",Kala Board,1.0,"[('Kala Board', 1.0)]",24.882326999999993,67.18232799999998
+62,228,Gulshan-e-Iqbal Town,1.0,"[('Gulshan-e-Iqbal Town', 1.0)]",Gulshan-e-Iqbal Block 3,1.0,"[('Gulshan-e-Iqbal Block 3', 1.0)]",24.928069999999995,67.09182299999998
+61,227,Gulshan-e-Iqbal Town,1.0,"[('Gulshan-e-Iqbal Town', 1.0)]",Gulshan-e-Iqbal Block 7,1.0,"[('Gulshan-e-Iqbal Block 7', 1.0)]",24.928500999999997,67.104329
+83,227,North Nazimabad Town,1.0,"[('North Nazimabad Town', 1.0)]",Block B,1.0,"[('Block B', 1.0)]",24.925747000000005,67.03876400000001
+24,225,Saddar Town,1.0,"[('Saddar Town', 1.0)]",Clifton Block 7,1.0,"[('Clifton Block 7', 1.0)]",24.827258,67.023873
+56,223,Gulshan-e-Iqbal Town,1.0,"[('Gulshan-e-Iqbal Town', 1.0)]",Gulshan-e-Iqbal Block 11,1.0,"[('Gulshan-e-Iqbal Block 11', 1.0)]",24.917751999999997,67.09967000000002
+77,222,North Nazimabad Town,1.0,"[('North Nazimabad Town', 1.0)]",Block D,1.0,"[('Block D', 1.0)]",24.944753000000002,67.04111100000001
+79,222,North Nazimabad Town,1.0,"[('North Nazimabad Town', 1.0)]",Block H,1.0,"[('Block H', 1.0)]",24.937820999999992,67.04910700000002
+74,221,North Nazimabad Town,1.0,"[('North Nazimabad Town', 1.0)]",Block K,1.0,"[('Block K', 1.0)]",24.949137999999998,67.05098499999998
+47,219,Gulshan-e-Iqbal Town,1.0,"[('Gulshan-e-Iqbal Town', 1.0)]",Gulshan-e-Iqbal Block 8,1.0,"[('Gulshan-e-Iqbal Block 8', 1.0)]",24.906074999999994,67.08599000000001
+75,219,North Nazimabad Town,1.0,"[('North Nazimabad Town', 1.0)]",Block L,1.0,"[('Block L', 1.0)]",24.945558999999996,67.05147699999999
+59,219,Gulshan-e-Iqbal Town,1.0,"[('Gulshan-e-Iqbal Town', 1.0)]",Gulshan-e-Iqbal Block 6,1.0,"[('Gulshan-e-Iqbal Block 6', 1.0)]",24.924457000000004,67.097219
+82,218,North Nazimabad Town,1.0,"[('North Nazimabad Town', 1.0)]",KDA Chowrangi,1.0,"[('KDA Chowrangi', 1.0)]",24.931405,67.037512
+85,218,North Nazimabad Town,1.0,"[('North Nazimabad Town', 1.0)]",Block F,1.0,"[('Block F', 1.0)]",24.916695,67.03307399999997
+68,218,Gulberg Town,1.0,"[('Gulberg Town', 1.0)]",Federal B Area Block 11,1.0,"[('Federal B Area Block 11', 1.0)]",24.927623,67.06809799999999
+81,214,North Nazimabad Town,1.0,"[('North Nazimabad Town', 1.0)]",Block G,1.0,"[('Block G', 1.0)]",24.932989999999993,67.04798700000002
+49,212,Gulshan-e-Iqbal Town,1.0,"[('Gulshan-e-Iqbal Town', 1.0)]",Gulshan-e-Iqbal Block 19,1.0,"[('Gulshan-e-Iqbal Block 19', 1.0)]",24.906460000000003,67.09358999999999
+22,211,Saddar Town,1.0,"[('Saddar Town', 1.0)]",Clifton Block 9,1.0,"[('Clifton Block 9', 1.0)]",24.824628,67.036789
+84,205,North Nazimabad Town,1.0,"[('North Nazimabad Town', 1.0)]",Block A,1.0,"[('Block A', 1.0)]",24.93131,67.02870400000003
+32,205,Liaquatabad Town,1.0,"[('Liaquatabad Town', 1.0)]",Firdous Colony,1.0,"[('Firdous Colony', 1.0)]",24.896219000000002,67.03416400000002
+50,199,Gulshan-e-Iqbal Town,1.0,"[('Gulshan-e-Iqbal Town', 1.0)]",Gulshan-e-Iqbal Block 9,1.0,"[('Gulshan-e-Iqbal Block 9', 1.0)]",24.909908000000005,67.09084800000001
+66,199,Gulberg Town,1.0,"[('Gulberg Town', 1.0)]",Federal B Area Block 15,1.0,"[('Federal B Area Block 15', 1.0)]",24.922359000000004,67.07308900000001
+65,194,Gulshan-e-Iqbal Town,1.0,"[('Gulshan-e-Iqbal Town', 1.0)]",Gulshan-e-Iqbal Block 1,1.0,"[('Gulshan-e-Iqbal Block 1', 1.0)]",24.919988999999998,67.08319700000001
+35,191,Liaquatabad Town,1.0,"[('Liaquatabad Town', 1.0)]",Dak-khana,1.0,"[('Dak-khana', 1.0)]",24.907900000000012,67.04899999999998
+38,187,Gulberg Town,1.0,"[('Gulberg Town', 1.0)]",Federal B Area Block 2,1.0,"[('Federal B Area Block 2', 1.0)]",24.912800000000004,67.06060000000001
+78,187,North Nazimabad Town,1.0,"[('North Nazimabad Town', 1.0)]",Shadman Town,1.0,"[('Shadman Town', 1.0)]",24.961012000000007,67.05018500000001
+72,185,North Nazimabad Town,1.0,"[('North Nazimabad Town', 1.0)]",Buffer Zone,1.0,"[('Buffer Zone', 1.0)]",24.953549000000006,67.064879
+58,184,Gulshan-e-Iqbal Town,1.0,"[('Gulshan-e-Iqbal Town', 1.0)]",Gulshan-e-Iqbal Block 5,1.0,"[('Gulshan-e-Iqbal Block 5', 1.0)]",24.920702000000002,67.09218
+25,176,Saddar Town,1.0,"[('Saddar Town', 1.0)]",Clifton Block 4,1.0,"[('Clifton Block 4', 1.0)]",24.810201000000003,67.03199900000001
+44,172,Gulshan-e-Iqbal Town,1.0,"[('Gulshan-e-Iqbal Town', 1.0)]",Gulshan-e-Iqbal Block 15,1.0,"[('Gulshan-e-Iqbal Block 15', 1.0)]",24.901208000000008,67.07793200000002
+53,164,Gulshan-e-Iqbal Town,1.0,"[('Gulshan-e-Iqbal Town', 1.0)]",Gulshan-e-Iqbal Block 10,1.0,"[('Gulshan-e-Iqbal Block 10', 1.0)]",24.913568,67.097393

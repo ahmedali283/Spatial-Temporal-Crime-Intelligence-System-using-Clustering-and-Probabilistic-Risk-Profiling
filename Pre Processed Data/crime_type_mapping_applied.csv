@@ -1,0 +1,28 @@
+CRIME_TYPE_ORIG,CRIME_TYPE_NORM
+Assault,ASSAULT
+Violence,ASSAULT
+Drug Possession,Drug Possession
+Ethnic Conflict,Ethnic Conflict
+Extortion,Extortion
+Drug Mafia Activity,GANG_VIOLENCE
+Gang Activity,GANG_VIOLENCE
+Gang Violence,GANG_VIOLENCE
+Gun Violence,GUN_VIOLENCE
+Shootings,GUN_VIOLENCE
+Industrial Hazards,Industrial Hazards
+Industrial Theft,Industrial Theft
+Kidnapping,Kidnapping
+Land Grabbing,Land Grabbing
+Homicide,MURDER
+Murder,MURDER
+Targeted Killing,MURDER
+Political Violence,Political Violence
+Mugging,ROBBERY
+Robbery,ROBBERY
+Cellphone Snatching,SNATCHING
+Mobile Snatching,SNATCHING
+Snatching,SNATCHING
+Street Snatching,SNATCHING
+Street Crimes,Street Crimes
+Phone Theft,THEFT
+Theft,THEFT
