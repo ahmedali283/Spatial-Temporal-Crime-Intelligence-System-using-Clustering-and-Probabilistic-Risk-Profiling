@@ -1,42 +1,43 @@
 import React from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recharts';
-import { AlertTriangle, TrendingUp, MapPin, CheckCircle, ShieldAlert } from 'lucide-react';
+import {
+    AlertTriangle, TrendingUp, MapPin, CheckCircle, ShieldAlert,
+    Skull, DollarSign, Package, Users, Activity, HelpCircle
+} from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const COLORS = ['#003f5c', '#58508d', '#bc5090', '#ff6361', '#ffa600'];
 
+const getCrimeIcon = (crimeName) => {
+    const lower = crimeName.toLowerCase();
+    if (lower.includes('murder') || lower.includes('homicide')) return <Skull size={18} />;
+    if (lower.includes('theft') || lower.includes('burglary') || lower.includes('robbery') || lower.includes('snatching')) return <DollarSign size={18} />;
+    if (lower.includes('drug')) return <Package size={18} />;
+    if (lower.includes('gang') || lower.includes('violence')) return <Users size={18} />;
+    if (lower.includes('assault')) return <Activity size={18} />;
+    return <AlertTriangle size={18} />; // Default
+};
+
 const ResultDisplay = ({ data }) => {
     if (!data) return null;
 
-    // Transform top 5 crimes for chart
-    // Assuming the backend returns list of strings "CrimeType": likelihood? 
-    // Wait, looking at testing.py, it returns separate lists of strings. 
-    // It doesn't seem to return numerical probabilities for the specific crimes in the "top 5" list directly 
-    // in the `testing.py` snippet I saw earlier (lines 56-57 just access "top5_crimes"). 
-    // However, for a Pie Chart we need numbers. 
-    // IF the backend only gives names, we can visualize them as an equal distribution or just a list.
-    // BUT the user asked for "percentages, not 0".
-    // Let's assume for now we list them effectively. If we can't get real probs from the simple prediction output,
-    // we might need to fake the "share" for visualization or stick to a list if data is missing.
-    // Actually, let's look at `testing.py` output again.
-    // 'top_5_most_likely_crimes' comes from `crime_info["top5_crimes"]`. 
-    // If `crime_info` is just a row from a dataframe, maybe it has more data?
-    // For this step, I will create a dummy distribution for the top 5 to show the UI capability 
-    // since the current backend code implies it just returns names.
-    // OR, I can make them equal slices.
+    // Use parsed data from backend if available
+    const riskData = data.top_5_parsed || [];
+    const safeData = data.bottom_5_parsed || [];
 
-    const chartData = data.top_5_most_likely_crimes?.map((crime, index) => ({
-        name: crime,
-        value: 100 - (index * 15) // Artificial weighting for visual hierarchy since real probs aren't exposed yet
+    const chartData = riskData.map((item) => ({
+        name: item.name,
+        value: item.probability
     }));
 
-    const verdict = data.crime_trend_slope_per_month > 0
-        ? { text: "High Risk - Trend Increasing", color: "#d9534f", icon: <TrendingUp /> }
-        : { text: "Moderate Stability", color: "#f0ad4e", icon: <CheckCircle /> };
+    let verdict = { text: "Moderate Risk", color: "#f0ad4e", icon: <CheckCircle /> };
 
-    if (Math.abs(data.crime_trend_slope_per_month) < 0.1) {
-        verdict.text = "Stable / Low Variance";
-        verdict.color = "#5cb85c";
+    if (data.crime_trend_slope_per_month > 0.5) {
+        verdict = { text: "High Risk - Trend Increasing", color: "#d9534f", icon: <TrendingUp /> };
+    } else if (data.crime_trend_slope_per_month < -0.5) {
+        verdict = { text: "Improving - Trend Decreasing", color: "#2ecc40", icon: <CheckCircle /> };
+    } else {
+        verdict = { text: "Stable / Low Variance", color: "#5cb85c", icon: <CheckCircle /> };
     }
 
     return (
@@ -63,11 +64,11 @@ const ResultDisplay = ({ data }) => {
                     </div>
                     <div className="detail-row">
                         <span>District/Town:</span>
-                        <strong>{data.likely_town}</strong>
+                        <strong>{data.likely_town || "Unknown"}</strong>
                     </div>
                     <div className="detail-row">
                         <span>Subdivision:</span>
-                        <strong>{data.likely_subdivision}</strong>
+                        <strong>{data.likely_subdivision || "Unknown"}</strong>
                     </div>
                     <div className="detail-row">
                         <span>Cluster ID:</span>
@@ -102,26 +103,40 @@ const ResultDisplay = ({ data }) => {
                         <AlertTriangle size={20} />
                         <h3>Top Risk Contributors</h3>
                     </div>
-                    <div className="chart-wrapper" style={{ width: '100%', height: 300 }}>
-                        <ResponsiveContainer>
-                            <PieChart>
-                                <Pie
-                                    data={chartData}
-                                    cx="50%"
-                                    cy="50%"
-                                    innerRadius={60}
-                                    outerRadius={80}
-                                    paddingAngle={5}
-                                    dataKey="value"
-                                >
-                                    {chartData?.map((entry, index) => (
-                                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                                    ))}
-                                </Pie>
-                                <Tooltip />
-                                <Legend />
-                            </PieChart>
-                        </ResponsiveContainer>
+                    <div className="chart-split">
+                        <div className="chart-wrapper">
+                            <ResponsiveContainer width="100%" height={250}>
+                                <PieChart>
+                                    <Pie
+                                        data={chartData}
+                                        cx="50%"
+                                        cy="50%"
+                                        innerRadius={50}
+                                        outerRadius={70}
+                                        paddingAngle={5}
+                                        dataKey="value"
+                                    >
+                                        {chartData.map((entry, index) => (
+                                            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                                        ))}
+                                    </Pie>
+                                    <Tooltip formatter={(value) => `${(value * 100).toFixed(1)}%`} />
+                                </PieChart>
+                            </ResponsiveContainer>
+                        </div>
+                        <div className="legend-list">
+                            {riskData.map((item, idx) => (
+                                <div key={idx} className="legend-item">
+                                    <span
+                                        className="dot"
+                                        style={{ backgroundColor: COLORS[idx % COLORS.length] }}
+                                    ></span>
+                                    <span className="icon-wrap">{getCrimeIcon(item.name)}</span>
+                                    <span className="name">{item.name}</span>
+                                    <span className="sc-val">{item.percentage}%</span>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
 
@@ -132,9 +147,11 @@ const ResultDisplay = ({ data }) => {
                         <h3>Lower Risk Categories</h3>
                     </div>
                     <div className="tags-container">
-                        {data.top_5_least_likely_crimes?.map((crime, idx) => (
-                            <span key={idx} className="safety-tag">{crime}</span>
-                        ))}
+                        {safeData.length > 0 ? safeData.map((item, idx) => (
+                            <span key={idx} className="safety-tag">
+                                {getCrimeIcon(item.name)} {item.name} <small>({item.percentage}%)</small>
+                            </span>
+                        )) : <p className="text-muted">No low risk data available</p>}
                     </div>
                 </div>
 
