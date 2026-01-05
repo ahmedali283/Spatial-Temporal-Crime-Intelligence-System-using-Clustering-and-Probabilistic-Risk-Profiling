@@ -20,8 +20,16 @@ const LocationMarker = ({ setPosition, manualPosition }) => {
     return manualPosition ? <Marker position={manualPosition}></Marker> : null;
 };
 
-const MapComponent = ({ onLocationSelect }) => {
+const MapComponent = ({ selectedLocation, onLocationSelect }) => {
+    // Internal state for the map center/marker
     const [position, setPosition] = useState(null);
+
+    // Sync with prop
+    useEffect(() => {
+        if (selectedLocation) {
+            setPosition(selectedLocation);
+        }
+    }, [selectedLocation]);
 
     // Default to Karachi
     const defaultCenter = [24.8607, 67.0011];
@@ -32,8 +40,7 @@ const MapComponent = ({ onLocationSelect }) => {
                 (pos) => {
                     const { latitude, longitude } = pos.coords;
                     const newPos = { lat: latitude, lng: longitude };
-                    setPosition(newPos);
-                    onLocationSelect(newPos);
+                    onLocationSelect(newPos); // Update parent
                 },
                 (err) => {
                     alert("Could not pull location. Please check browser permissions.");
@@ -51,22 +58,24 @@ const MapComponent = ({ onLocationSelect }) => {
     }
 
     return (
-        <div className="map-wrapper">
+        <div className="map-component-container">
             <button className="locate-btn" onClick={handleLocateMe} title="Use my location">
                 <Locate size={20} /> Use My Location
             </button>
-            <MapContainer
-                center={defaultCenter}
-                zoom={12}
-                scrollWheelZoom={true}
-                style={{ height: '400px', width: '100%' }}
-            >
-                <TileLayer
-                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
-                <LocationMarker setPosition={updatePosition} manualPosition={position} />
-            </MapContainer>
+            <div className="map-wrapper">
+                <MapContainer
+                    center={defaultCenter}
+                    zoom={12}
+                    scrollWheelZoom={true}
+                    style={{ height: '400px', width: '100%' }}
+                >
+                    <TileLayer
+                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                    />
+                    <LocationMarker setPosition={updatePosition} manualPosition={position} />
+                </MapContainer>
+            </div>
         </div>
     );
 };

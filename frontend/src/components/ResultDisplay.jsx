@@ -27,8 +27,8 @@ const ResultDisplay = ({ data }) => {
     const riskData = data.top_5_parsed || [];
     const safeData = data.bottom_5_parsed || [];
 
-    // Combine and sort for "Show All" (Ascending: Low -> High)
-    const allCrimes = [...riskData, ...safeData].sort((a, b) => a.probability - b.probability);
+    // Combine and sort for "Show All" (Descending: High -> Low)
+    const allCrimes = [...riskData, ...safeData].sort((a, b) => b.probability - a.probability);
 
     const chartData = riskData.map((item) => ({
         name: item.name,
@@ -64,6 +64,21 @@ const ResultDisplay = ({ data }) => {
         text: `${riskLevel} - ${trendDesc}`,
         color: riskColor,
         icon: riskIcon
+    };
+
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        show: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.05
+            }
+        }
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, x: -20 },
+        show: { opacity: 1, x: 0 }
     };
 
     return (
@@ -128,9 +143,11 @@ const ResultDisplay = ({ data }) => {
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', borderBottom: '1px solid #f0f0f0', paddingBottom: '1rem' }}>
                         <div className="card-header" style={{ margin: 0, border: 0, padding: 0 }}>
                             {showAll ? <List size={20} /> : <AlertTriangle size={20} />}
-                            <h3 style={{ margin: 0 }}>{showAll ? "All Crime Probabilities (Ascending)" : "Top Risk Contributors"}</h3>
+                            <h3 style={{ margin: 0 }}>{showAll ? "All Crime Probabilities (High to Low)" : "Top Risk Contributors"}</h3>
                         </div>
-                        <button
+                        <motion.button
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
                             onClick={() => setShowAll(!showAll)}
                             style={{
                                 background: '#f8f9fa',
@@ -142,18 +159,27 @@ const ResultDisplay = ({ data }) => {
                             }}
                         >
                             {showAll ? "Show Top 5 Only" : "Show All Crimes"}
-                        </button>
+                        </motion.button>
                     </div>
 
                     {showAll ? (
-                        <div className="all-crimes-list">
+                        <motion.div
+                            className="all-crimes-list"
+                            variants={containerVariants}
+                            initial="hidden"
+                            animate="show"
+                        >
                             <div style={{ display: 'grid', gridTemplateColumns: '1fr 100px 100px', fontWeight: 'bold', borderBottom: '2px solid #eee', paddingBottom: '0.5rem', marginBottom: '0.5rem' }}>
                                 <span>Crime Type</span>
                                 <span style={{ textAlign: 'right' }}>Probability</span>
                                 <span style={{ textAlign: 'right' }}>Risk Level</span>
                             </div>
                             {allCrimes.map((item, idx) => (
-                                <div key={idx} style={{ display: 'grid', gridTemplateColumns: '1fr 100px 100px', padding: '0.5rem 0', borderBottom: '1px solid #f8f9fa', alignItems: 'center' }}>
+                                <motion.div
+                                    key={idx}
+                                    variants={itemVariants}
+                                    style={{ display: 'grid', gridTemplateColumns: '1fr 100px 100px', padding: '0.5rem 0', borderBottom: '1px solid #f8f9fa', alignItems: 'center' }}
+                                >
                                     <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                                         {getCrimeIcon(item.name)} {item.name}
                                     </span>
@@ -168,9 +194,9 @@ const ResultDisplay = ({ data }) => {
                                             {item.probability > 0.1 ? 'High' : item.probability > 0.05 ? 'Med' : 'Low'}
                                         </span>
                                     </span>
-                                </div>
+                                </motion.div>
                             ))}
-                        </div>
+                        </motion.div>
                     ) : (
                         <div className="chart-split">
                             <div className="chart-wrapper">

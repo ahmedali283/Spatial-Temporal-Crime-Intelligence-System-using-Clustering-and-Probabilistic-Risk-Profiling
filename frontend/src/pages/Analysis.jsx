@@ -47,9 +47,13 @@ const Analysis = () => {
 
             <div className="dashboard-grid">
                 <div className="control-panel">
-                    <MapComponent onLocationSelect={setSelectedLocation} />
+                    <MapComponent
+                        selectedLocation={selectedLocation}
+                        onLocationSelect={setSelectedLocation}
+                    />
                     <PredictionForm
                         selectedLocation={selectedLocation}
+                        onLocationUpdate={setSelectedLocation}
                         onPredict={handlePredict}
                         loading={loading}
                     />
