@@ -1,39 +1,71 @@
-import React, { useState } from 'react';
-import { MapContainer, TileLayer, Marker, useMapEvents } from 'react-leaflet';
+import React, { useState, useEffect } from 'react';
+import { MapContainer, TileLayer, Marker, useMapEvents, useMap } from 'react-leaflet';
+import { Locate } from 'lucide-react';
 
-const LocationMarker = ({ setPosition }) => {
-    const [position, setPos] = useState(null);
+const LocationMarker = ({ setPosition, manualPosition }) => {
+    const map = useMap();
 
-    const map = useMapEvents({
+    useEffect(() => {
+        if (manualPosition) {
+            map.flyTo(manualPosition, 15);
+        }
+    }, [manualPosition, map]);
+
+    useMapEvents({
         click(e) {
-            setPos(e.latlng);
             setPosition(e.latlng);
-            map.flyTo(e.latlng, map.getZoom());
-        },
-        locationfound(e) {
-            setPos(e.latlng);
-            setPosition(e.latlng);
-            map.flyTo(e.latlng, map.getZoom());
         },
     });
 
-    return position === null ? null : (
-        <Marker position={position}></Marker>
-    );
+    return manualPosition ? <Marker position={manualPosition}></Marker> : null;
 };
 
 const MapComponent = ({ onLocationSelect }) => {
-    // Default to Karachi (as hinted by notebooks in previous view)
-    const defaultPosition = [24.8607, 67.0011];
+    const [position, setPosition] = useState(null);
+
+    // Default to Karachi
+    const defaultCenter = [24.8607, 67.0011];
+
+    const handleLocateMe = () => {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                (pos) => {
+                    const { latitude, longitude } = pos.coords;
+                    const newPos = { lat: latitude, lng: longitude };
+                    setPosition(newPos);
+                    onLocationSelect(newPos);
+                },
+                (err) => {
+                    alert("Could not pull location. Please check browser permissions.");
+                    console.error(err);
+                }
+            );
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    };
+
+    const updatePosition = (pos) => {
+        setPosition(pos);
+        onLocationSelect(pos);
+    }
 
     return (
         <div className="map-wrapper">
-            <MapContainer center={defaultPosition} zoom={13} scrollWheelZoom={true} style={{ height: '400px', width: '100%' }}>
+            <button className="locate-btn" onClick={handleLocateMe} title="Use my location">
+                <Locate size={20} /> Use My Location
+            </button>
+            <MapContainer
+                center={defaultCenter}
+                zoom={12}
+                scrollWheelZoom={true}
+                style={{ height: '400px', width: '100%' }}
+            >
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <LocationMarker setPosition={onLocationSelect} />
+                <LocationMarker setPosition={updatePosition} manualPosition={position} />
             </MapContainer>
         </div>
     );
