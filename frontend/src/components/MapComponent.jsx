@@ -59,10 +59,10 @@ const MapComponent = ({ selectedLocation, onLocationSelect }) => {
 
     return (
         <div className="map-component-container">
-            <button className="locate-btn" onClick={handleLocateMe} title="Use my location">
-                <Locate size={20} /> Use My Location
-            </button>
             <div className="map-wrapper">
+                <button className="locate-btn" onClick={handleLocateMe} title="Use my location">
+                    <Locate size={20} /> Use My Location
+                </button>
                 <MapContainer
                     center={defaultCenter}
                     zoom={12}
