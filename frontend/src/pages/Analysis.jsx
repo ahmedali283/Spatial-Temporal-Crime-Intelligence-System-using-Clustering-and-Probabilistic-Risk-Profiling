@@ -1,17 +1,49 @@
 import React, { useState, useRef } from 'react';
 import axios from 'axios';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import MapComponent from '../components/MapComponent';
 import PredictionForm from '../components/PredictionForm';
 import ResultDisplay from '../components/ResultDisplay';
+import LocationWarningModal from '../components/LocationWarningModal';
+
+// Approximate Bounding Box for Karachi
+const KARACHI_BOUNDS = {
+    minLat: 24.7,
+    maxLat: 25.2,
+    minLng: 66.7,
+    maxLng: 67.6
+};
 
 const Analysis = () => {
     const [selectedLocation, setSelectedLocation] = useState(null);
     const [predictionData, setPredictionData] = useState(null);
     const [loading, setLoading] = useState(false);
+    const [showWarning, setShowWarning] = useState(false);
     const resultsRef = useRef(null);
 
+    const checkLocation = (lat, lng) => {
+        if (lat < KARACHI_BOUNDS.minLat || lat > KARACHI_BOUNDS.maxLat ||
+            lng < KARACHI_BOUNDS.minLng || lng > KARACHI_BOUNDS.maxLng) {
+            setShowWarning(true);
+            return false; // Return false to indicate invalid location
+        }
+        return true;
+    };
+
+    const handleLocationUpdate = (loc) => {
+        // ALWAYS update the selection so the user sees where they clicked/typed
+        setSelectedLocation(loc);
+
+        // THEN check if it's valid
+        checkLocation(loc.lat, loc.lng);
+    };
+
     const handlePredict = async (data) => {
+        // Double check validation before sending request
+        if (!checkLocation(data.lat, data.lon)) {
+            return;
+        }
+
         setLoading(true);
         setPredictionData(null);
         try {
@@ -21,7 +53,6 @@ const Analysis = () => {
                 date: data.date || null
             });
             setPredictionData(response.data);
-            // Smooth scroll to results after a short delay to allow render
             setTimeout(() => {
                 resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }, 100);
@@ -40,6 +71,11 @@ const Analysis = () => {
             exit={{ opacity: 0 }}
             className="analysis-page"
         >
+            <LocationWarningModal
+                isOpen={showWarning}
+                onClose={() => setShowWarning(false)}
+            />
+
             <header className="analysis-header">
                 <h2>Live Intelligence Dashboard</h2>
                 <p>Select a location to generate a real-time risk profile.</p>
@@ -49,11 +85,11 @@ const Analysis = () => {
                 <div className="control-panel">
                     <MapComponent
                         selectedLocation={selectedLocation}
-                        onLocationSelect={setSelectedLocation}
+                        onLocationSelect={handleLocationUpdate}
                     />
                     <PredictionForm
                         selectedLocation={selectedLocation}
-                        onLocationUpdate={setSelectedLocation}
+                        onLocationUpdate={handleLocationUpdate}
                         onPredict={handlePredict}
                         loading={loading}
                     />

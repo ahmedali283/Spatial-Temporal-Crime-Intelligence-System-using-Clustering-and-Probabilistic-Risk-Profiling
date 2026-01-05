@@ -4,11 +4,13 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Analysis from './pages/Analysis';
 import FAQ from './pages/FAQ';
+import AnimatedBackground from './components/AnimatedBackground';
 
 function App() {
   return (
     <Router>
       <div className="app-container">
+        <AnimatedBackground />
         <Navbar />
         <div className="page-content">
           <Routes>
