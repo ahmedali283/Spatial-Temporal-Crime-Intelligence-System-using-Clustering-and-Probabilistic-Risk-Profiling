@@ -388,7 +388,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Authors
 
-- **Your Name** - *Initial work* - [GitHub Profile](https://github.com/yourusername)
+- **Ahmed Ali** - *Data Preprocessing, Feature Engineering, KMEANS, HDSCAN,* - [GitHub Profile](https://github.com/ahmedali283)
+- **Bazil Altaf** - *Data Visualization, OPTICS, LINEAR REGRESSION,* - [GitHub Profile](https://github.com/ahmedali283)
 
 ---
 
